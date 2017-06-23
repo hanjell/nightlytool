@@ -1,0 +1,60 @@
+{
+  "update_tools_libs": true,
+  "sandboxes": [
+    {
+      "name": "my-main-bcd",
+      "refresh": true,
+      "enabled": true,
+      "products": []
+    },
+    {
+      "name": "sample",
+      "refresh": false,
+      "enabled": false,
+      "products": [
+        {
+          "name": "jaguar",
+          "target": true,
+          "host": true,
+          "cortex": true
+        },
+        {
+          "name": "walt",
+          "target": true,
+          "host": true,
+          "cortex": true
+        },
+        {
+          "name": "tatooine",
+          "target": true,
+          "host": true,
+          "cortex": true
+        },
+        {
+          "name": "vulcan",
+          "target": true,
+          "host": true,
+          "cortex": false
+        }
+      ]
+    }
+  ],
+  "products": {
+    "jaguar": {
+      "target": "wrl80-haswell-dbg",
+      "cortex": "cortex-threadx-ass"
+    },
+    "walt": {
+      "target": "wrl60-haswell-dbg",
+      "cortex": "cortex-threadx-ass"
+    },
+    "tatooine": {
+      "target": "wrl60-haswell_x86_64-dbg",
+      "cortex": "arm-threadx-ass"
+    },
+    "vulcan": {
+      "target": "wrl60-haswell_x86_64-dbg",
+      "cortex": "arm-threadx-ass"
+    }
+  }
+}
